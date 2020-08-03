@@ -31,13 +31,26 @@ Add ADMob Application ID to your application level manifest like below
     </application>
     
     
-Step 2 : 
+Step 2 :
+
+ Add maven to your project level gradle (project/gradle)
+
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+
+    }
+    
+
+Step 3 : 
 
 Add the following implementation dependency to your application level gradle (app/gradle)
   
      implementation 'com.github.vinoddirishala:ADMobMadeEasy:1.0.0'
-  
-Step 3 :
+     
+     
+Step 4 :
 
   Add the extended Ad Class to your XML file like below
  
