@@ -24,8 +24,15 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Own Library to make google ad mob ads integration/implementation made easy
+    implementation 'com.github.vinoddirishala:ADMobMadeEasy:1.0.0'
+    implementation 'com.google.android.gms:play-services-ads:19.2.0'
+
+
 
 }

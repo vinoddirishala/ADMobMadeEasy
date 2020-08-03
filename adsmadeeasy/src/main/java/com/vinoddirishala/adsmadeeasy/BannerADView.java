@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 /**
  * Created by Vinod Dirishala on 03-08-2020 16:49
@@ -31,6 +32,7 @@ public class BannerADView extends FrameLayout {
             e.getMessage();
             e.printStackTrace();
         }
+        MobileAds.initialize(context);
         initADView(context);
     }
 
