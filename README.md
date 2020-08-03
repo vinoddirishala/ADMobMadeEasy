@@ -29,4 +29,31 @@ Add ADMob Application ID to your application level manifest like below
             android:value="ca-app-pub-3940256099942544~3347511713"/>
 
     </application>
+    
+    
+Step 2 : 
 
+Add the following implementation dependency to your application level gradle (app/gradle)
+  
+     implementation 'com.github.vinoddirishala:ADMobMadeEasy:1.0.0'
+  
+Step 3 :
+
+  Add the extended Ad Class to your XML file like below
+ 
+      <com.vinoddirishala.adsmadeeasy.BannerADView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        app:bannerAdID="ca-app-pub-3940256099942544/6300978111"
+        app:bannerAdType="banner"
+        android:layout_height="wrap_content"/>
+  
+
+ add your AD ID to attribute bannerAdID and set bannerAdType as banner or largeBanner as per your need.
+ 
+ That's it for now.
+ 
+ Will add other ads implementation code in near future.....
+ 
+ 
+ Thank you
