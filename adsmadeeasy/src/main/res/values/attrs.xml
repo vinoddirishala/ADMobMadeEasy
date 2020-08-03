@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="BannerADView">
-        <attr name="bannerAdType" format="string"></attr>
+        <attr name="bannerAdType" format="string"/>
         <attr name="bannerAdID" format="string"/>
     </declare-styleable>
 </resources>
