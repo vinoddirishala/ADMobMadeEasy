@@ -1,0 +1,3 @@
+include ':adsmadeeasy'
+include ':app'
+rootProject.name = "ADs Made Easy Sample"
