@@ -24,16 +24,16 @@ Add ADMob Application ID to your application level manifest like below
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+        # <meta-data
+        #   android:name="com.google.android.gms.ads.APPLICATION_ID"
+        #    android:value="ca-app-pub-3940256099942544~3347511713"/>
 
     </application>
     
     
 Step 2 :
 
- Add maven to your project level gradle (project/gradle)
+ Add maven to your project level gradle # (project/gradle)
 
     repositories {
         google()
@@ -45,9 +45,9 @@ Step 2 :
 
 Step 3 : 
 
-Add the following implementation dependency to your application level gradle (app/gradle)
+Add the following implementation dependency to your application level gradle # (app/gradle)
   
-     implementation 'com.github.vinoddirishala:ADMobMadeEasy:1.0.0'
+      implementation 'com.github.vinoddirishala:ADMobMadeEasy:1.0.0'
      
      
 Step 4 :
@@ -62,7 +62,7 @@ Step 4 :
         android:layout_height="wrap_content"/>
   
 
- add your AD ID to attribute bannerAdID and set bannerAdType as banner or largeBanner as per your need.
+ add your AD ID to attribute # bannerAdID and set # bannerAdType as banner or largeBanner as per your need.
  
  That's it for now.
  
