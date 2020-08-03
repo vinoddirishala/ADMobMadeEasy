@@ -47,7 +47,7 @@ Step 3 :
 
 Add the following implementation dependency to your application level gradle # (app/gradle)
   
-      implementation 'com.github.vinoddirishala:ADMobMadeEasy:1.0.0'
+      implementation 'com.github.vinoddirishala:ADMobMadeEasy:1.0.1'
      
      
 Step 4 :
