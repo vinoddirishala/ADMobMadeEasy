@@ -15,8 +15,9 @@
         android:layout_height="wrap_content"/>
 
     <com.vinoddirishala.adsmadeeasy.UnifiedAdView
-        app:unifiedAdID="@string/app_name"
+        android:layout_marginTop="40dp"
+        app:unifiedAdID="ca-app-pub-3940256099942544/2247696110"
         android:layout_width="match_parent"
-        android:layout_height="215dp"/>
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
