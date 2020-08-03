@@ -31,7 +31,7 @@ import com.google.android.gms.ads.formats.UnifiedNativeAdView;
 public class UnifiedAdView extends FrameLayout {
 
     UnifiedNativeAd nativeAd;
-    String UNIFIED_ADID = "ca-app-pub-3940256099942544/2247696110\n"; // default ad id from google admob
+    String UNIFIED_ADID = "ca-app-pub-3940256099942544/2247696110"; // default ad id from google admob
 
     public UnifiedAdView(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
