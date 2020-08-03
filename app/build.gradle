@@ -31,7 +31,7 @@ dependencies {
 
     // Own Library to make google ad mob ads integration/implementation made easy
     implementation 'com.github.vinoddirishala:ADMobMadeEasy:1.0.0'
-    implementation 'com.google.android.gms:play-services-ads:19.2.0'
+
 
 
 
