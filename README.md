@@ -1,5 +1,5 @@
 # ADMobMadeEasy
-This library is to help you integrating google AD Mob ads integration easy...!
+This library is to help you integrating google AD Mob ads in a easier way...!
 
 Integration Steps
 
