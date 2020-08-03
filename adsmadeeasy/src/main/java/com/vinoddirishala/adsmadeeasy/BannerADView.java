@@ -44,5 +44,5 @@ public class BannerADView extends FrameLayout {
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerADView.loadAd(adRequest);
     }
-
+    
 }
