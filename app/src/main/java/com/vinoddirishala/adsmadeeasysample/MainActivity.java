@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 import com.vinoddirishala.adsmadeeasy.InterstitialAD;
+import com.vinoddirishala.adsmadeeasy.InterstitialADResponse;
 import com.vinoddirishala.adsmadeeasy.RewardVideoAD;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,15 +20,16 @@ public class MainActivity extends AppCompatActivity {
         interstitial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                InterstitialAD interstitialAD = new InterstitialAD(MainActivity.this,"ca-app-pub-3940256099942544/1033173712");
+               new InterstitialAD(MainActivity.this,"ca-app-pub-3940256099942544/1033173712");
             }
         });
         reward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RewardVideoAD rewardVideoAD = new RewardVideoAD(MainActivity.this,"ca-app-pub-3940256099942544/5224354917");
+                new RewardVideoAD(MainActivity.this,"ca-app-pub-3940256099942544/5224354917");
             }
         });
 
     }
+
 }

@@ -1,7 +1,6 @@
 package com.vinoddirishala.adsmadeeasy;
 
 import android.content.Context;
-
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -22,7 +21,6 @@ public class InterstitialAD extends AdListener {
         this.mContext = context;
         this.interstitialAdID = adID;
         loadInterstitialAD();
-        interstitialADResponse = new InterstitialADResponse();
     }
 
     void loadInterstitialAD() {
@@ -44,13 +42,13 @@ public class InterstitialAD extends AdListener {
     @Override
     public void onAdClosed() {
         super.onAdClosed();
-        interstitialADResponse.onAdClosed();
+        interstitialADResponse.onIAdClosed();
     }
 
     @Override
     public void onAdFailedToLoad(int i) {
         super.onAdFailedToLoad(i);
-        interstitialADResponse.onAdFailedToLoad(i);
+        interstitialADResponse.onIAdFailedToLoad(i);
     }
 
 }
