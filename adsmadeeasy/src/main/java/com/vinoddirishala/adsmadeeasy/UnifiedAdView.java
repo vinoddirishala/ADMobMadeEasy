@@ -28,7 +28,7 @@ import com.google.android.gms.ads.formats.UnifiedNativeAdView;
  * Created by Vinod Dirishala on 15-07-2020 12:50
  **/
 
-public class UnifiedAdView extends FrameLayout {
+public class UnifiedAdView extends FrameLayout{
 
     UnifiedNativeAd nativeAd;
     String UNIFIED_ADID = "ca-app-pub-3940256099942544/2247696110"; // default ad id from google admob
