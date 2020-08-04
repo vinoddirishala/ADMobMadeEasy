@@ -22,7 +22,7 @@ public  class RewardVideoAD {
         this.mContext = context;
         this.rewardedVideoAdID = rVideoAdID;
         rewardedVideoADResponse = new RewardedVideoADResponse();
-        MobileAds.getRewardedVideoAdInstance(mContext);
+        rewardedVideoAd = MobileAds.getRewardedVideoAdInstance(mContext);
         rewardedVideoAd.setRewardedVideoAdListener(new RewardedVideoAdListener() {
             @Override
             public void onRewardedVideoAdLoaded() {
