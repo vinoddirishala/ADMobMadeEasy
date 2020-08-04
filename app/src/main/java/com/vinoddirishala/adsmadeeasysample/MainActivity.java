@@ -9,8 +9,9 @@ import android.widget.Toast;
 import com.vinoddirishala.adsmadeeasy.InterstitialAD;
 import com.vinoddirishala.adsmadeeasy.InterstitialADResponse;
 import com.vinoddirishala.adsmadeeasy.RewardVideoAD;
+import com.vinoddirishala.adsmadeeasy.RewardedVideoADResponse;
 
-public class MainActivity extends AppCompatActivity implements InterstitialADResponse{
+public class MainActivity extends AppCompatActivity implements InterstitialADResponse, RewardedVideoADResponse {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,5 +44,20 @@ public class MainActivity extends AppCompatActivity implements InterstitialADRes
     @Override
     public void onIAdFailedToLoad(int var1) {
         Toast.makeText(this, "Ad failed to load due to "+var1, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRVAdClosed() {
+        Toast.makeText(this, "RV AD Closed", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRVAdFailedToLoad(int var1) {
+        Toast.makeText(this, "Ad failed to load due to "+var1, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRewarded(int amount, String rewardType) {
+        Toast.makeText(this, "rewarded \n"+rewardType+"\n"+amount, Toast.LENGTH_SHORT).show();
     }
 }
