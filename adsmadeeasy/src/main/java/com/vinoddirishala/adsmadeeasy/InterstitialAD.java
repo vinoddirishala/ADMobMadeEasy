@@ -20,6 +20,7 @@ public class InterstitialAD extends AdListener {
     public InterstitialAD(Context context, String adID) {
         this.mContext = context;
         this.interstitialAdID = adID;
+        interstitialADResponse = (InterstitialADResponse) context;
         loadInterstitialAD();
     }
 
