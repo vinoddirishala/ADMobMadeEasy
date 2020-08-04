@@ -30,7 +30,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     // Own Library to make google ad mob ads integration/implementation made easy
-    implementation 'com.github.vinoddirishala:ADMobMadeEasy:1.0.6'
+    implementation 'com.github.vinoddirishala:ADMobMadeEasy:1.0.7'
 
 
 

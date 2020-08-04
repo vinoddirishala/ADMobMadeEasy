@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
 import com.vinoddirishala.adsmadeeasy.InterstitialAD;
 import com.vinoddirishala.adsmadeeasy.InterstitialADResponse;
 import com.vinoddirishala.adsmadeeasy.RewardVideoAD;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements InterstitialADResponse{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,4 +34,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onIAdClosed() {
+        Toast.makeText(this, "AD Closed", Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    public void onIAdFailedToLoad(int var1) {
+        Toast.makeText(this, "Ad failed to load due to "+var1, Toast.LENGTH_SHORT).show();
+    }
 }

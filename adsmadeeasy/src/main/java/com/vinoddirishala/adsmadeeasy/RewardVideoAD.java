@@ -21,7 +21,7 @@ public  class RewardVideoAD {
     public RewardVideoAD(Context context,String rVideoAdID) {
         this.mContext = context;
         this.rewardedVideoAdID = rVideoAdID;
-        rewardedVideoADResponse = new RewardedVideoADResponse();
+        rewardedVideoADResponse = (RewardedVideoADResponse)mContext;
         rewardedVideoAd = MobileAds.getRewardedVideoAdInstance(mContext);
         rewardedVideoAd.setRewardedVideoAdListener(new RewardedVideoAdListener() {
             @Override
@@ -43,7 +43,7 @@ public  class RewardVideoAD {
 
             @Override
             public void onRewardedVideoAdClosed() {
-                rewardedVideoADResponse.onAdClosed();
+                rewardedVideoADResponse.onRVAdClosed();
             }
 
             @Override
@@ -58,7 +58,7 @@ public  class RewardVideoAD {
 
             @Override
             public void onRewardedVideoAdFailedToLoad(int i) {
-
+                rewardedVideoADResponse.onRVAdFailedToLoad(i);
             }
 
             @Override

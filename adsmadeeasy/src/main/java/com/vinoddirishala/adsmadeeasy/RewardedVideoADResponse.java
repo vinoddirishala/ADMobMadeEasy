@@ -3,18 +3,13 @@ package com.vinoddirishala.adsmadeeasy;
 /**
  * Created by Vinod Dirishala on 04-08-2020 12:00
  **/
-public class RewardedVideoADResponse {
+public interface RewardedVideoADResponse {
 
-    public RewardedVideoADResponse() {
-    }
 
-    public void onAdClosed() {
-    }
 
-    public void onAdFailedToLoad(int var1) {
-    }
+    void onRVAdClosed();
 
-    public void onRewarded(int amount,String rewardType){
+    void onRVAdFailedToLoad(int var1);
 
-    }
+    void onRewarded(int amount,String rewardType);
 }
